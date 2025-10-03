@@ -1,0 +1,124 @@
+{
+  "chains": [
+    {
+      "id": "gold_chain",
+      "name": "Gold Chain",
+      "description": "Classic gold chain that shines under the spotlight",
+      "rarity": "common",
+      "cost": 100
+    },
+    {
+      "id": "diamond_chain",
+      "name": "Diamond Chain",
+      "description": "Iced out diamond chain for the real champions",
+      "rarity": "rare",
+      "cost": 500
+    },
+    {
+      "id": "platinum_chain",
+      "name": "Platinum Chain",
+      "description": "Ultimate status symbol in Uppercut City",
+      "rarity": "legendary",
+      "cost": 1000
+    }
+  ],
+  "hats": [
+    {
+      "id": "snapback",
+      "name": "Classic Snapback",
+      "description": "Old school style snapback cap",
+      "rarity": "common",
+      "cost": 50
+    },
+    {
+      "id": "fitted",
+      "name": "Fitted Cap",
+      "description": "Clean fitted cap for the stage",
+      "rarity": "common",
+      "cost": 75
+    },
+    {
+      "id": "crown",
+      "name": "Champion's Crown",
+      "description": "Only true champions can wear this",
+      "rarity": "legendary",
+      "cost": 2000
+    }
+  ],
+  "outfits": [
+    {
+      "id": "streetwear",
+      "name": "Street Style",
+      "description": "Fresh streetwear outfit",
+      "rarity": "common",
+      "cost": 200
+    },
+    {
+      "id": "tracksuit",
+      "name": "Classic Tracksuit",
+      "description": "Old school hip-hop tracksuit",
+      "rarity": "uncommon",
+      "cost": 350
+    },
+    {
+      "id": "designer",
+      "name": "Designer Fit",
+      "description": "High-end designer outfit",
+      "rarity": "rare",
+      "cost": 800
+    },
+    {
+      "id": "champion_jersey",
+      "name": "Champion Jersey",
+      "description": "Exclusive jersey for Uppercut City champions",
+      "rarity": "legendary",
+      "cost": 1500
+    }
+  ],
+  "accessories": [
+    {
+      "id": "sunglasses",
+      "name": "Shades",
+      "description": "Cool sunglasses for extra style points",
+      "rarity": "common",
+      "cost": 100
+    },
+    {
+      "id": "gold_watch",
+      "name": "Gold Watch",
+      "description": "Expensive timepiece to show your success",
+      "rarity": "rare",
+      "cost": 600
+    },
+    {
+      "id": "ring",
+      "name": "Championship Ring",
+      "description": "Ring commemorating your victories",
+      "rarity": "legendary",
+      "cost": 1200
+    }
+  ],
+  "mic_styles": [
+    {
+      "id": "basic_mic",
+      "name": "Basic Mic",
+      "description": "Standard microphone",
+      "rarity": "common",
+      "cost": 0
+    },
+    {
+      "id": "gold_mic",
+      "name": "Gold Mic",
+      "description": "Shiny gold-plated microphone",
+      "rarity": "rare",
+      "cost": 400
+    },
+    {
+      "id": "diamond_mic",
+      "name": "Diamond Mic",
+      "description": "Ultra-rare diamond-encrusted mic",
+      "rarity": "legendary",
+      "cost": 1800
+    }
+  ]
+}

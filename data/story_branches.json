@@ -1,0 +1,80 @@
+{
+  "start": {
+    "text": "You're backstage at the Uppercut City Championship. The crowd's roar shakes the walls. This is your moment. Your palms are sweaty, but your mind is sharp. The MC just called your name...",
+    "choices": {
+      "1": {
+        "text": "Walk out confidently and grab the mic",
+        "next": "stage_entrance"
+      },
+      "2": {
+        "text": "Take a moment to center yourself and visualize victory",
+        "next": "meditation"
+      },
+      "3": {
+        "text": "Review your best bars one more time",
+        "next": "practice"
+      }
+    }
+  },
+  "stage_entrance": {
+    "text": "You stride onto the stage with confidence. The spotlight hits you, and the crowd erupts! You feel the energy flowing through you. Your opponent stands across from you, looking intimidating but you don't flinch.",
+    "choices": {
+      "1": {
+        "text": "Start with an aggressive opening bar",
+        "next": "aggressive_start"
+      },
+      "2": {
+        "text": "Begin with a smooth, clever introduction",
+        "next": "smooth_start"
+      }
+    }
+  },
+  "meditation": {
+    "text": "You close your eyes and take deep breaths. You visualize the crowd cheering your name. When you open your eyes, you feel centered and ready. Every doubt has melted away.",
+    "choices": {
+      "1": {
+        "text": "Walk to the stage with newfound confidence",
+        "next": "stage_entrance"
+      }
+    }
+  },
+  "practice": {
+    "text": "You run through your killer bars one more time. Each rhyme lands perfectly in your mind. You've got this. The rhythm is locked in.",
+    "choices": {
+      "1": {
+        "text": "Hit the stage, it's go time",
+        "next": "stage_entrance"
+      }
+    }
+  },
+  "aggressive_start": {
+    "text": "You come out swinging with fire bars! The crowd goes wild! Your opponent looks shaken. You've taken control of the battle from the jump. The judges are nodding their heads to your flow.",
+    "choices": {
+      "1": {
+        "text": "Keep the pressure on with more attacks",
+        "next": "victory"
+      },
+      "2": {
+        "text": "Switch to showing off your technical skills",
+        "next": "victory"
+      }
+    }
+  },
+  "smooth_start": {
+    "text": "Your clever wordplay and smooth delivery captivate everyone. The crowd is impressed by your intelligence and wit. Your opponent seems confused about how to counter your style.",
+    "choices": {
+      "1": {
+        "text": "Continue with intricate rhyme schemes",
+        "next": "victory"
+      },
+      "2": {
+        "text": "Shift gears to more aggressive bars",
+        "next": "victory"
+      }
+    }
+  },
+  "victory": {
+    "text": "The final bell rings! The judges deliberate for only a moment before raising their scorecards. UNANIMOUS DECISION! You're the new Uppercut City Champion! The crowd chants your name as confetti falls. You've made it to the top! 🏆",
+    "choices": {}
+  }
+}
