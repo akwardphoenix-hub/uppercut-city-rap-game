@@ -1,0 +1,20 @@
+{
+  "starter": [
+    { "id": "uppercut", "name": "Punchline Uppercut", "base_damage": 3 },
+    { "id": "flow", "name": "Flow Combo", "base_damage": 2 },
+    { "id": "micdrop", "name": "Mic Drop", "base_damage": 4 }
+  ],
+  "agile": [
+    { "id": "needle", "name": "Needle Thread", "base_damage": 2 },
+    { "id": "slice", "name": "Rhythm Slice", "base_damage": 3 },
+    { "id": "blink", "name": "Blink Verse", "base_damage": 4 }
+  ],
+  "heavy": [
+    { "id": "anvil", "name": "Anvil Rhyme", "base_damage": 4 },
+    { "id": "quake", "name": "Bass Quake", "base_damage": 5 }
+  ],
+  "brawler": [
+    { "id": "hook", "name": "Harbor Hook", "base_damage": 3 },
+    { "id": "ropes", "name": "Ropes & Rhymes", "base_damage": 4 }
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  { "id": "street-mic", "slot": "mic", "name": "Street Mic", "mods": { "attack": 0.05 } },
+  { "id": "neon-mic", "slot": "mic", "name": "Neon Condenser", "mods": { "accuracy": 0.07 } },
+  { "id": "bass-mic", "slot": "mic", "name": "Bassline Hammer", "mods": { "attack": 0.1 } },
+  { "id": "harbor-mic", "slot": "mic", "name": "Harbor PA", "mods": { "attack": 0.06, "accuracy": 0.02 } },
+
+  { "id": "hoodie-basic", "slot": "hoodie", "name": "Classic Hoodie", "mods": { "defense": 0.05 } },
+  { "id": "windbreaker", "slot": "hoodie", "name": "Windbreaker", "mods": { "accuracy": 0.03 } },
+  { "id": "neon-jacket", "slot": "hoodie", "name": "Neon Jacket", "mods": { "defense": 0.06, "accuracy": 0.02 } },
+  { "id": "kevlar-hoodie", "slot": "hoodie", "name": "Kevlar Hoodie", "mods": { "defense": 0.12 } },
+  { "id": "slicker", "slot": "hoodie", "name": "Dock Slicker", "mods": { "defense": 0.08 } },
+
+  { "id": "hi-tops", "slot": "kicks", "name": "Hi-Tops", "mods": { "accuracy": 0.02 } },
+  { "id": "speed-runners", "slot": "kicks", "name": "Speed Runners", "mods": { "accuracy": 0.06 } },
+  { "id": "steel-toes", "slot": "kicks", "name": "Steel Toes", "mods": { "defense": 0.05 } },
+  { "id": "dock-boots", "slot": "kicks", "name": "Dock Boots", "mods": { "defense": 0.06 } }
+]

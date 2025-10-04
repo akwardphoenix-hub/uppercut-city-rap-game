@@ -1,0 +1,18 @@
+[
+  {
+    "id": "uptown",
+    "name": "Uptown",
+    "warmups": ["DJ Uppercut"],
+    "midboss": "Neon Lynx",
+    "boss": "Brickhouse",
+    "rewards": { "unlock_gear": ["neon-mic", "neon-jacket"], "unlock_characters": [] }
+  },
+  {
+    "id": "dockyard",
+    "name": "Dockyard",
+    "warmups": ["DJ Uppercut"],
+    "midboss": "Brickhouse",
+    "boss": "Captain Wharf",
+    "rewards": { "unlock_gear": ["dock-boots"], "unlock_characters": [] }
+  }
+]

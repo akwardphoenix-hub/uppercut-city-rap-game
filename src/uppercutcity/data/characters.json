@@ -1,0 +1,42 @@
+{
+  "MC Blaze": {
+    "hp": 16,
+    "level": 1,
+    "base_accuracy": 0.65,
+    "base_defense": 0.15,
+    "moveset": "starter",
+    "gear": { "mic": "street-mic", "hoodie": "windbreaker", "kicks": "hi-tops" }
+  },
+  "DJ Uppercut": {
+    "hp": 15,
+    "level": 1,
+    "base_accuracy": 0.6,
+    "base_defense": 0.18,
+    "moveset": "starter",
+    "gear": { "mic": "street-mic", "hoodie": "hoodie-basic", "kicks": "hi-tops" }
+  },
+  "Neon Lynx": {
+    "hp": 17,
+    "level": 2,
+    "base_accuracy": 0.7,
+    "base_defense": 0.2,
+    "moveset": "agile",
+    "gear": { "mic": "neon-mic", "hoodie": "neon-jacket", "kicks": "speed-runners" }
+  },
+  "Brickhouse": {
+    "hp": 20,
+    "level": 2,
+    "base_accuracy": 0.55,
+    "base_defense": 0.25,
+    "moveset": "heavy",
+    "gear": { "mic": "bass-mic", "hoodie": "kevlar-hoodie", "kicks": "steel-toes" }
+  },
+  "Captain Wharf": {
+    "hp": 19,
+    "level": 3,
+    "base_accuracy": 0.62,
+    "base_defense": 0.22,
+    "moveset": "brawler",
+    "gear": { "mic": "harbor-mic", "hoodie": "slicker", "kicks": "dock-boots" }
+  }
+}
