@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Pre-publish check script
+# NOTE: This script does NOT regenerate documentation or instructions
+# All documentation files (README.md, SETUP.md, .github/instructions/*, etc.)
+# are frozen as source of truth and should not be auto-rewritten during CI
+
 echo "🔎 Node/npm:"
 node -v || true
 npm -v || true

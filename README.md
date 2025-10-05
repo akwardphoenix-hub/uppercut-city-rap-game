@@ -24,6 +24,17 @@ If you see firewall blocks (esm.ubuntu.com, api.github.com), that's expected in 
 - **Test report**: `npm run test:report`
 - **Pre-publish check**: `npm run prepublish-check`
 
+## Important: Frozen Documentation
+
+⚠️ **Documentation files in this repository are frozen as source of truth and should NOT be auto-regenerated during CI runs.** This prevents infinite loops and ensures stable builds.
+
+Frozen files include:
+- `README.md`, `SETUP.md`, `IMPLEMENTATION_SUMMARY.md`, `NETWORK_BLOCKING_FIXES.md`
+- `.github/copilot-instructions.md` and `.github/instructions/*.md`
+- Configuration files: `.github/copilot-setup-steps.yml`, `scripts/pre-publish-check.sh`
+
+See `.frozen-docs` for the complete list. Manual documentation updates should be done through pull requests.
+
 ## Architecture
 
 **Project**: Masternode Council / Harmonizer / Uppercut City  

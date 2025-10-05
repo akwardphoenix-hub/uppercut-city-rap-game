@@ -1,5 +1,8 @@
 name: Copilot setup steps (pre-firewall)
 version: 1
+# NOTE: This setup does NOT regenerate documentation or instructions
+# All documentation files are frozen as source of truth
+# No doc regeneration steps should be added here to avoid CI loops
 steps:
   - name: Use Node 20
     run: |

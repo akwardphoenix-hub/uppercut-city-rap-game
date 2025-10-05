@@ -1,0 +1,27 @@
+# Frozen Documentation Files
+# These files are the source of truth and should NOT be auto-regenerated
+# to prevent CI loops and ensure stable builds
+
+## Core Documentation
+- README.md
+- SETUP.md
+- IMPLEMENTATION_SUMMARY.md
+- NETWORK_BLOCKING_FIXES.md
+
+## GitHub Instructions
+- .github/copilot-instructions.md
+- .github/instructions/react-components.instructions.md
+- .github/instructions/tests.instructions.md
+- .github/instructions/e2e.instructions.md
+
+## Configuration Files
+- .github/copilot-setup-steps.yml
+- scripts/pre-publish-check.sh
+
+## Note
+If you need to regenerate documentation, use the manual regeneration
+script (when available) AFTER verifying that tests pass:
+  npm run regen-docs  # (to be implemented if needed)
+
+Do NOT add automatic documentation regeneration to CI pipelines
+or pre-publish scripts to avoid infinite loops.
