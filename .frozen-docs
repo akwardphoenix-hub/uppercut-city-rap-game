@@ -15,13 +15,16 @@
 - .github/instructions/e2e.instructions.md
 
 ## Configuration Files
-- .github/copilot-setup-steps.yml
 - scripts/pre-publish-check.sh
 
-## Note
-If you need to regenerate documentation, use the manual regeneration
-script (when available) AFTER verifying that tests pass:
-  npm run regen-docs  # (to be implemented if needed)
+## CI Stability Rules
+1. CI must never leave the repo dirty (git status must be clean after build/test)
+2. Pre-publish script (scripts/pre-publish-check.sh) only lints, builds, and runs tests
+3. Documentation should only be updated manually by maintainers, never auto-regenerated in CI
+4. Do NOT add .github/copilot-setup.yml or copilot-setup-steps.yml files
+5. Keep all regeneration logic OUTSIDE CI - CI = pure validation only
 
-Do NOT add automatic documentation regeneration to CI pipelines
+## Note
+If you need to regenerate documentation, use a manual script AFTER verifying
+that tests pass. Never add automatic documentation regeneration to CI pipelines
 or pre-publish scripts to avoid infinite loops.

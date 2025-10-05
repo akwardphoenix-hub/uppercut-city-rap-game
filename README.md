@@ -9,7 +9,7 @@ Legendary Rap Battle 🥊
   - `npx playwright install chromium`
   - `npm run build && npm run test:e2e`
 
-If you see firewall blocks (esm.ubuntu.com, api.github.com), that's expected in the agent sandbox. The **copilot-setup-steps** pre-installs what it needs before firewall rules apply.
+If you see firewall blocks (esm.ubuntu.com, api.github.com), that's expected in agent sandboxes.
 
 ## Build & Test Commands
 
@@ -28,12 +28,18 @@ If you see firewall blocks (esm.ubuntu.com, api.github.com), that's expected in 
 
 ⚠️ **Documentation files in this repository are frozen as source of truth and should NOT be auto-regenerated during CI runs.** This prevents infinite loops and ensures stable builds.
 
+**CI Stability Rules:**
+1. CI must never leave the repo dirty (`git status` must be clean after build/test)
+2. Pre-publish script only lints, builds, and runs tests - no regeneration
+3. Documentation should only be updated manually by maintainers, never auto-regenerated in CI
+4. Do NOT add `.github/copilot-setup.yml` or `copilot-setup-steps.yml` files
+
 Frozen files include:
 - `README.md`, `SETUP.md`, `IMPLEMENTATION_SUMMARY.md`, `NETWORK_BLOCKING_FIXES.md`
 - `.github/copilot-instructions.md` and `.github/instructions/*.md`
-- Configuration files: `.github/copilot-setup-steps.yml`, `scripts/pre-publish-check.sh`
+- Configuration files: `scripts/pre-publish-check.sh`
 
-See `.frozen-docs` for the complete list. Manual documentation updates should be done through pull requests.
+See `.frozen-docs` for the complete list. Manual documentation updates should be done through pull requests only.
 
 ## Architecture
 
