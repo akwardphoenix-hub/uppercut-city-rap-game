@@ -1,0 +1,30 @@
+# Frozen Documentation Files
+# These files are the source of truth and should NOT be auto-regenerated
+# to prevent CI loops and ensure stable builds
+
+## Core Documentation
+- README.md
+- SETUP.md
+- IMPLEMENTATION_SUMMARY.md
+- NETWORK_BLOCKING_FIXES.md
+
+## GitHub Instructions
+- .github/copilot-instructions.md
+- .github/instructions/react-components.instructions.md
+- .github/instructions/tests.instructions.md
+- .github/instructions/e2e.instructions.md
+
+## Configuration Files
+- scripts/pre-publish-check.sh
+
+## CI Stability Rules
+1. CI must never leave the repo dirty (git status must be clean after build/test)
+2. Pre-publish script (scripts/pre-publish-check.sh) only lints, builds, and runs tests
+3. Documentation should only be updated manually by maintainers, never auto-regenerated in CI
+4. Do NOT add .github/copilot-setup.yml or copilot-setup-steps.yml files
+5. Keep all regeneration logic OUTSIDE CI - CI = pure validation only
+
+## Note
+If you need to regenerate documentation, use a manual script AFTER verifying
+that tests pass. Never add automatic documentation regeneration to CI pipelines
+or pre-publish scripts to avoid infinite loops.
