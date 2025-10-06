@@ -1,7 +1,7 @@
 // src/services/councilService.ts
 // Offline-first council data service with safe remote->local fallback
 
-type Proposal = {
+export type Proposal = {
   id: string;
   title: string;
   description?: string;
