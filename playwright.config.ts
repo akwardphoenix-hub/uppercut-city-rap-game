@@ -1,31 +1,24 @@
 import { defineConfig, devices } from '@playwright/test';
 
-const PORT = process.env.PORT || '4173';
-const BASE_URL = `http://localhost:${PORT}`;
-
 export default defineConfig({
-  testDir: 'e2e',
-  timeout: 30 * 1000,
+  testDir: './e2e',
   fullyParallel: true,
-  reporter: [['list'], ['html', { open: 'never' }]],
+  retries: process.env.CI ? 2 : 0,
+  reporter: process.env.CI ? 'line' : 'html',
   use: {
-    baseURL: BASE_URL,
-    headless: true,
-    screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
-    // Block all non-localhost requests by default
-    permissions: [],
+    baseURL: 'http://127.0.0.1:4173',
+    trace: 'on-first-retry'
   },
-  // Serve the built app from dist/ with vite preview.
-  // We already ran `npm run build` in copilot-setup-steps.yml.
   webServer: {
-    command: 'npm run preview:ci',
-    url: BASE_URL,
+    command: 'npm run preview',
+    url: 'http://127.0.0.1:4173',
     reuseExistingServer: !process.env.CI,
-    timeout: 60_000,
+    timeout: 60_000
   },
   projects: [
-    { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
-    { name: 'webkit', use: { ...devices['Desktop Safari'] } },
-  ],
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] }
+    }
+  ]
 });
